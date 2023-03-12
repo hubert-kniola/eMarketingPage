@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Bebas+Neue&family=Julius+Sans+One&family=Lexend+Deca:wght@300;400&family=Michroma&family=Mitr&family=Orbitron:wght@400;500&family=Roboto+Flex:opsz,wght@8..144,500&family=Rubik:wght@300;500&family=Sarala:wght@400;700&family=Staatliches&family=Tilt+Neon&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Tilt Neon';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
