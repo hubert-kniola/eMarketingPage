@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { homeObjOne, homeObjTwo } from "../components/info-section/Data";
+import { homeObjOne, homeObjThree, homeObjTwo } from "../components/info-section/Data";
 import HeroSection from "../components/hero-section/HeroSection";
 import InfoSection from "../components/info-section/InfoSection";
 import Navbar from "../components/navbar/Nabar";
@@ -20,6 +20,7 @@ const Home = () => {
       <HeroSection />
       <InfoSection data={homeObjOne} />
       <InfoSection data={homeObjTwo} />
+      <InfoSection data={homeObjThree} />
       <Footer/>
     </>
   );
