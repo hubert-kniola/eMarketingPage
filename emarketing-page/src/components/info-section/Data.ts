@@ -1,41 +1,43 @@
 import About from "../../images/about.svg";
 import Discover from "../../images/discover.svg";
 import Services from "../../images/services.svg";
+import Mail from "../../images/mail.svg";
 
 export const homeObjOne = {
-  id: "about",
-  lightBg: true,
-  lightText: false,
-  lightTextDesc: true,
-  topLine: "Fast Flexible Generator",
-  headline: "Pass your data and get your result",
-  description:
-    "Nulla dolor dolor et sint ut consequat qui labore commodo Lorem dolor officia reprehenderit. Consequat cillum ipsum culpa incididunt in minim dolore consequat voluptate elit exercitation. Amet sit labore sint eiusmod et reprehenderit et. Labore culpa sit nostrud excepteur tempor commodo proident ex nisi dolore et dolor fugiat laborum. Est irure minim exercitation mollit aliqua ipsum sit ipsum et Lorem culpa.",
-  buttonLabel: "Try your gen",
-  imgStart: false,
-  img: About,
-  alt: "Gym",
-  dark: true,
-  primary: true,
-  darkText: true,
-};
-
-export const homeObjTwo = {
-  id: "discover",
+  id: "product",
   lightBg: false,
   lightText: true,
   lightTextDesc: true,
-  topLine: "Fast Flexible Generator",
-  headline: "Pass your data and get your result",
+  topLine: "Szybki elastyczny generator",
+  headline: "Wprowadź wymagane dane i uzyskaj wynik",
   description:
-    "Nulla dolor dolor et sint ut consequat qui labore commodo Lorem dolor officia reprehenderit. Consequat cillum ipsum culpa incididunt in minim dolore consequat voluptate elit exercitation. Amet sit labore sint eiusmod et reprehenderit et. Labore culpa sit nostrud excepteur tempor commodo proident ex nisi dolore et dolor fugiat laborum. Est irure minim exercitation mollit aliqua ipsum sit ipsum et Lorem culpa.",
-  buttonLabel: "Try your gen",
-  imgStart: true,
-  img: Discover,
-  alt: "Gym",
+    "To całkiem proste! Udostępnij kilka małoznaczących cyfr, wylicz swoje zapotrzebowanie i odbierz dostosowaną do siebie dietę.",
+  buttonLabel: "Sprawdź swój GENZ",
+  imgStart: false,
+  img: About,
+  alt: "Product",
   dark: false,
   primary: true,
   darkText: false,
+  withButton: true,
+};
+
+export const homeObjTwo = {
+  id: "about",
+  lightBg: true,
+  lightText: false,
+  lightTextDesc: false,
+  topLine: "Automatycznie układana dieta",
+  headline: "Nie lubisz brukselki? Nie ma problemu!",
+  description:
+    "Specjalnie zaprogramowany algorytm weźmie pod uwagę twoje gusta dotyczące dań i produktów i na ich podstawie zwróci spersonalizowany spis dań.",
+  imgStart: true,
+  img: Discover,
+  alt: "About",
+  dark: true,
+  primary: true,
+  darkText: true,
+  withButton: false,
 };
 
 export const homeObjThree = {
@@ -43,16 +45,36 @@ export const homeObjThree = {
   lightBg: true,
   lightText: false,
   lightTextDesc: true,
-  topLine: "Fast Flexible Generator",
-  headline: "Pass your data and get your result",
+  topLine: "Wszystkie popularne składniki",
+  headline: "Globalna baza produktów",
   description:
-    "Nulla dolor dolor et sint ut consequat qui labore commodo Lorem dolor officia reprehenderit. Consequat cillum ipsum culpa incididunt in minim dolore consequat voluptate elit exercitation. Amet sit labore sint eiusmod et reprehenderit et. Labore culpa sit nostrud excepteur tempor commodo proident ex nisi dolore et dolor fugiat laborum. Est irure minim exercitation mollit aliqua ipsum sit ipsum et Lorem culpa.",
-  buttonLabel: "Try your gen",
+    "Nasz produkt przeszuka każdy zakamarek żeby znaleźć dobrej jakości produkt z jak najlepszymi wartościami odżywczymi. Nie czekaj i wypróbuj!",
+  buttonLabel: "Sprawdź",
   imgStart: false,
   img: Services,
-  alt: "Gym",
+  alt: "Services",
   dark: true,
   primary: true,
   darkText: true,
+  withButton: true,
+};
+
+export const homeObjFour = {
+  id: "contact",
+  lightBg: false,
+  lightText: true,
+  lightTextDesc: true,
+  topLine: "skontaktuj się",
+  headline: "Zadaj nam pytanie!",
+  description:
+    "Jeśli masz jakiekolwiek pytania dotyczące inwestycji lub chcesz poznać więcej szczegółów na temat produktu napisz do nas!",
+  buttonLabel: "Wyślij mail",
+  imgStart: false,
+  img: Mail,
+  alt: "Contact",
+  dark: false,
+  primary: true,
+  darkText: false,
+  withButton: true,
 };
 

@@ -35,6 +35,18 @@ const Navbar = ({ toggle }: NavbarProps) => {
           <NavMenu>
             <NavItem>
               <NavLinks
+                to="product"
+                smooth={true}
+                duration={500}
+                spy={true}
+                offset={-80}
+                activeClass="active"
+              >
+                Produkt
+              </NavLinks>
+            </NavItem>
+            <NavItem>
+              <NavLinks
                 to="about"
                 smooth={true}
                 duration={500}
@@ -42,19 +54,7 @@ const Navbar = ({ toggle }: NavbarProps) => {
                 offset={-80}
                 activeClass="active"
               >
-                About
-              </NavLinks>
-            </NavItem>
-            <NavItem>
-              <NavLinks
-                to="discover"
-                smooth={true}
-                duration={500}
-                spy={true}
-                offset={-80}
-                activeClass="active"
-              >
-                Discover
+                O produkcie
               </NavLinks>
             </NavItem>
             <NavItem>
@@ -66,12 +66,24 @@ const Navbar = ({ toggle }: NavbarProps) => {
                 offset={-80}
                 activeClass="active"
               >
-                Services
+                Usługi
+              </NavLinks>
+            </NavItem>
+            <NavItem>
+              <NavLinks
+                to="contact"
+                smooth={true}
+                duration={500}
+                spy={true}
+                offset={-80}
+                activeClass="active"
+              >
+                Kontakt
               </NavLinks>
             </NavItem>
           </NavMenu>
           <NavBtn>
-            <NavBtnLink to="/">Test product</NavBtnLink>
+            <NavBtnLink to="/">Sprawdź produkt</NavBtnLink>
           </NavBtn>
         </NavbarContainer>
       </Nav>

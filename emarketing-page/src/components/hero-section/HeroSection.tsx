@@ -28,12 +28,12 @@ const HeroSection = () => {
         </VideoBg>
       </HeroBg>
       <HeroContent>
-        <HeroH1>Diet Generator</HeroH1>
-        <HeroP>Calculate your BMR and generate diet</HeroP>
+        <HeroH1>Generator DIET-GENZ</HeroH1>
+        <HeroP>Oblicz swoje BMR i wygeneruj dietę</HeroP>
       </HeroContent>
       <HeroBtnWrapper>
         <Button
-          to="discover"
+          to="/product"
           onMouseEnter={onHover}
           onMouseLeave={onHover}
           primary={true}
@@ -41,7 +41,7 @@ const HeroSection = () => {
           big={false}
           fontBig={false}
         >
-          Get started {hover ? <ArrowForward /> : <ArrowRight />}
+          Rozpocznij {hover ? <ArrowForward /> : <ArrowRight />}
         </Button>
       </HeroBtnWrapper>
     </HeroContainer>

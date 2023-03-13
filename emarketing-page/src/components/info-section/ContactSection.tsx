@@ -19,7 +19,7 @@ interface InfoSectionProps {
   data: any;
 }
 
-const InfoSection = ({ data }: InfoSectionProps) => {
+const ContactSection = ({ data }: InfoSectionProps) => {
   return (
     <InfoContainer lightBg={data.lightBg} id={data.id}>
       <InfoWrapper>
@@ -29,23 +29,22 @@ const InfoSection = ({ data }: InfoSectionProps) => {
               <TopLine>{data.topLine}</TopLine>
               <Heading lightText={data.lightText}>{data.headline}</Heading>
               <Subtitle darkText={data.darkText}>{data.description}</Subtitle>
-              {data.withButton && (
-                <BtnWrap>
-                  <Button
-                    to="home"
-                    big={false}
-                    fontBig={false}
-                    smooth={true}
-                    duration={500}
-                    spy={true}
-                    offset={-80}
-                    primary={data.primary ? true : false}
-                    dark={data.dark ? true : false}
-                  >
-                    {data.buttonLabel}
-                  </Button>
-                </BtnWrap>
-              )}
+              <BtnWrap>
+                <Button
+                  to="home"
+                  big={false}
+                  fontBig={false}
+                  smooth={true}
+                  duration={500}
+                  spy={true}
+                  offset={-80}
+                  primary={data.primary ? true : false}
+                  dark={data.dark ? true : false}
+                  onClick={() => window.open('mailto:diet-genz@example.com?subject=[DIET-GENZ] Kontakt ze strony&body=Witam, ...')}
+                >
+                  {data.buttonLabel}
+                </Button>
+              </BtnWrap>
             </TextWrapper>
           </Column1>
           <Column2>
@@ -59,4 +58,4 @@ const InfoSection = ({ data }: InfoSectionProps) => {
   );
 };
 
-export default InfoSection;
+export default ContactSection;
