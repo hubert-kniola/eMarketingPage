@@ -14,7 +14,7 @@ import {
 import { animateScroll as scroll } from "react-scroll";
 
 interface NavbarProps {
-  toggle: () => void;
+  toggle?: () => void;
 }
 
 const toggleHome = () => {
@@ -47,18 +47,6 @@ const Navbar = ({ toggle }: NavbarProps) => {
             </NavItem>
             <NavItem>
               <NavLinks
-                to="about"
-                smooth={true}
-                duration={500}
-                spy={true}
-                offset={-80}
-                activeClass="active"
-              >
-                O produkcie
-              </NavLinks>
-            </NavItem>
-            <NavItem>
-              <NavLinks
                 to="services"
                 smooth={true}
                 duration={500}
@@ -67,6 +55,18 @@ const Navbar = ({ toggle }: NavbarProps) => {
                 activeClass="active"
               >
                 Usługi
+              </NavLinks>
+            </NavItem>
+            <NavItem>
+              <NavLinks
+                to="about"
+                smooth={true}
+                duration={500}
+                spy={true}
+                offset={-80}
+                activeClass="active"
+              >
+                O produkcie
               </NavLinks>
             </NavItem>
             <NavItem>
@@ -83,7 +83,7 @@ const Navbar = ({ toggle }: NavbarProps) => {
             </NavItem>
           </NavMenu>
           <NavBtn>
-            <NavBtnLink to="/">Sprawdź produkt</NavBtnLink>
+            <NavBtnLink to="/rest">Sprawdź produkt</NavBtnLink>
           </NavBtn>
         </NavbarContainer>
       </Nav>

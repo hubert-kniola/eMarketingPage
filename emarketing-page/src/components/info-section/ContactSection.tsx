@@ -29,22 +29,48 @@ const ContactSection = ({ data }: InfoSectionProps) => {
               <TopLine>{data.topLine}</TopLine>
               <Heading lightText={data.lightText}>{data.headline}</Heading>
               <Subtitle darkText={data.darkText}>{data.description}</Subtitle>
-              <BtnWrap>
-                <Button
-                  to="home"
-                  big={false}
-                  fontBig={false}
-                  smooth={true}
-                  duration={500}
-                  spy={true}
-                  offset={-80}
-                  primary={data.primary ? true : false}
-                  dark={data.dark ? true : false}
-                  onClick={() => window.open('mailto:diet-genz@example.com?subject=[DIET-GENZ] Kontakt ze strony&body=Witam, ...')}
-                >
-                  {data.buttonLabel}
-                </Button>
-              </BtnWrap>
+              {data.description1 && (
+                <Subtitle darkText={data.darkText}>
+                  {data.description1}
+                </Subtitle>
+              )}
+              {data.description2 && (
+                <Subtitle darkText={data.darkText}>
+                  {data.description2}
+                </Subtitle>
+              )}
+              {data.description3 && (
+                <Subtitle darkText={data.darkText}>
+                  {data.description3}
+                </Subtitle>
+              )}
+              {data.description4 && (
+                <Subtitle darkText={data.darkText}>
+                  {data.description4}
+                </Subtitle>
+              )}
+              {data.withButton && (
+                <BtnWrap>
+                  <Button
+                    to="home"
+                    big={false}
+                    fontBig={false}
+                    smooth={true}
+                    duration={500}
+                    spy={true}
+                    offset={-80}
+                    primary={data.primary ? true : false}
+                    dark={data.dark ? true : false}
+                    onClick={() =>
+                      window.open(
+                        "mailto:diet-genz@example.com?subject=[DIET-GENZ] Kontakt ze strony&body=Witam, ..."
+                      )
+                    }
+                  >
+                    {data.buttonLabel}
+                  </Button>
+                </BtnWrap>
+              )}
             </TextWrapper>
           </Column1>
           <Column2>

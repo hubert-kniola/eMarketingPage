@@ -1,5 +1,6 @@
 import React from "react";
 import { Button } from "../ButtonElements";
+import { NavBtn, NavBtnLink } from "../navbar/NavbarElements";
 import {
   BtnWrap,
   Column1,
@@ -14,12 +15,18 @@ import {
   TextWrapper,
   TopLine,
 } from "./InfoSectionElements";
+import { animateScroll as scroll } from "react-scroll";
 
 interface InfoSectionProps {
   data: any;
 }
 
 const InfoSection = ({ data }: InfoSectionProps) => {
+
+  const toggleHome = () => {
+    scroll.scrollToTop();
+  };
+
   return (
     <InfoContainer lightBg={data.lightBg} id={data.id}>
       <InfoWrapper>
@@ -32,7 +39,7 @@ const InfoSection = ({ data }: InfoSectionProps) => {
               {data.withButton && (
                 <BtnWrap>
                   <Button
-                    to="home"
+                    to={data.to ? data.to : "home"}
                     big={false}
                     fontBig={false}
                     smooth={true}
@@ -45,6 +52,11 @@ const InfoSection = ({ data }: InfoSectionProps) => {
                     {data.buttonLabel}
                   </Button>
                 </BtnWrap>
+              )}
+              {data.withNavButton && (
+                <NavBtn>
+                  <NavBtnLink to={data.to} onClick={toggleHome}>{data.buttonLabel}</NavBtnLink>
+                </NavBtn>
               )}
             </TextWrapper>
           </Column1>
