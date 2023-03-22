@@ -59,7 +59,7 @@ export const homeObjTwo = {
 };
 
 export const homeObjThree = {
-  id: "services",
+  id: "",
   lightBg: true,
   lightText: false,
   lightTextDesc: true,
@@ -118,7 +118,7 @@ export const homeObjFive = {
 };
 
 export const homeObjSix = {
-  id: "services",
+  id: "",
   maintitle: "Współpracowaliśmy z:",
   icon1: KFD,
   icon2: SFD,
@@ -244,7 +244,7 @@ export const compObjSeven = {
 };
 
 export const compObjFour = {
-  id: "services",
+  id: "",
   maintitle: "FAQ",
   subtitle1:
     "Czy dieta generowana automatycznie przez Waszą firmę jest indywidualnie dostosowana do moich potrzeb?",
@@ -302,7 +302,7 @@ export const compObjFive = {
 };
 
 export const compObjSix = {
-  id: "services",
+  id: "",
   maintitle: "Współpracowaliśmy z:",
   icon1: KFD,
   icon2: SFD,
