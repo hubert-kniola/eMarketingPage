@@ -21,7 +21,7 @@ import {
   SocialMediaWrap,
   WebsiteRights,
 } from "./FooterElements";
-import { animateScroll as scroll } from "react-scroll";
+import { animateScroll as scroll, Link } from "react-scroll";
 
 const Footer = () => {
   const toggleHome = () => {
@@ -34,60 +34,53 @@ const Footer = () => {
         <FooterLinksContainer>
           <FooterLinksWrapper>
             <FooterLinkItems>
-              <FooterLinkTitle>About Us</FooterLinkTitle>
-              <FooterLink to="/">How it works</FooterLink>
-              <FooterLink to="/">FAQ</FooterLink>
-              <FooterLink to="/">Careers</FooterLink>
-              <FooterLink to="/">Investors</FooterLink>
-              <FooterLink to="/">Terms of Service</FooterLink>
+              <FooterLinkTitle>O nas</FooterLinkTitle>
+              <FooterLink to="/company">FAQ</FooterLink>
+              <FooterLink to="/company" onClick={toggleHome}>
+                Zespół
+              </FooterLink>
             </FooterLinkItems>
             <FooterLinkItems>
-              <FooterLinkTitle>About Us</FooterLinkTitle>
-              <FooterLink to="/">How it works</FooterLink>
-              <FooterLink to="/">FAQ</FooterLink>
-              <FooterLink to="/">Careers</FooterLink>
-              <FooterLink to="/">Investors</FooterLink>
-              <FooterLink to="/">Terms of Service</FooterLink>
+              <FooterLinkTitle>Komunikacja</FooterLinkTitle>
+              <FooterLink to="/">Kontakt</FooterLink>
+              <FooterLink to="/">Współpraca</FooterLink>
             </FooterLinkItems>
           </FooterLinksWrapper>
           <FooterLinksWrapper>
             <FooterLinkItems>
-              <FooterLinkTitle>About Us</FooterLinkTitle>
-              <FooterLink to="/">How it works</FooterLink>
-              <FooterLink to="/">FAQ</FooterLink>
-              <FooterLink to="/">Careers</FooterLink>
-              <FooterLink to="/">Investors</FooterLink>
-              <FooterLink to="/">Terms of Service</FooterLink>
+              <FooterLinkTitle>Social Media</FooterLinkTitle>
+              <FooterLink to="/">Youtube</FooterLink>
+              <FooterLink to="/">Twitter</FooterLink>
             </FooterLinkItems>
             <FooterLinkItems>
               <FooterLinkTitle>Social Media</FooterLinkTitle>
               <FooterLink to="/">Instagram</FooterLink>
               <FooterLink to="/">Facebook</FooterLink>
-              <FooterLink to="/">Youtube</FooterLink>
-              <FooterLink to="/">Twitter</FooterLink>
             </FooterLinkItems>
           </FooterLinksWrapper>
         </FooterLinksContainer>
         <SocialMedia>
           <SocialMediaWrap>
-            <SocialLogo to="/" onClick={toggleHome}>diet-genz</SocialLogo>
+            <SocialLogo to="/" onClick={toggleHome}>
+              diet-genz
+            </SocialLogo>
             <WebsiteRights>
               diet-genz - {new Date().getFullYear()} All rights reserved.
             </WebsiteRights>
             <SocialIcons>
-              <SocialIconLink href="/" target="_blank" aria-label="Facebook">
+              <SocialIconLink href="https://www.facebook.com/" target="_blank" aria-label="Facebook">
                 <FaFacebook />
               </SocialIconLink>
-              <SocialIconLink href="/" target="_blank" aria-label="Instagram">
+              <SocialIconLink href="https://www.instagram.com/" target="_blank" aria-label="Instagram">
                 <FaInstagram />
               </SocialIconLink>
-              <SocialIconLink href="/" target="_blank" aria-label="Youtube">
+              <SocialIconLink href="https://www.youtube.com/" target="_blank" aria-label="Youtube">
                 <FaYoutube />
               </SocialIconLink>
-              <SocialIconLink href="/" target="_blank" aria-label="Twitter">
+              <SocialIconLink href="https://twitter.com/" target="_blank" aria-label="Twitter">
                 <FaTwitter />
               </SocialIconLink>
-              <SocialIconLink href="/" target="_blank" aria-label="Linkedin">
+              <SocialIconLink href="https://www.linkedin.com/" target="_blank" aria-label="Linkedin">
                 <FaLinkedin />
               </SocialIconLink>
             </SocialIcons>

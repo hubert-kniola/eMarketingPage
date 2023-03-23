@@ -12,6 +12,7 @@ import {
   NavBtnLink,
 } from "./NavbarElements";
 import { animateScroll as scroll } from "react-scroll";
+import { useLocation } from "react-router";
 
 interface NavbarProps {
   toggle?: () => void;
@@ -22,6 +23,7 @@ const toggleHome = () => {
 };
 
 const Navbar = ({ toggle }: NavbarProps) => {
+  const location = useLocation();
   return (
     <>
       <Nav>
@@ -42,7 +44,7 @@ const Navbar = ({ toggle }: NavbarProps) => {
                 offset={-80}
                 activeClass="active"
               >
-                Produkt
+                {location.pathname === "/company" ? "      " : "Produkt"}
               </NavLinks>
             </NavItem>
             <NavItem>
@@ -54,7 +56,7 @@ const Navbar = ({ toggle }: NavbarProps) => {
                 offset={-80}
                 activeClass="active"
               >
-                Usługi
+                {location.pathname === "/company" ? "      " : "Usługi"}
               </NavLinks>
             </NavItem>
             <NavItem>
@@ -66,7 +68,7 @@ const Navbar = ({ toggle }: NavbarProps) => {
                 offset={-80}
                 activeClass="active"
               >
-                O produkcie
+                {location.pathname === "/company" ? "      " : "O produkcie"}
               </NavLinks>
             </NavItem>
             <NavItem>
@@ -78,12 +80,12 @@ const Navbar = ({ toggle }: NavbarProps) => {
                 offset={-80}
                 activeClass="active"
               >
-                Kontakt
+                {location.pathname === "/company" ? "      " : "Kontakt"}
               </NavLinks>
             </NavItem>
           </NavMenu>
           <NavBtn>
-            <NavBtnLink to="/rest">Sprawdź produkt</NavBtnLink>
+            <NavBtnLink to="/" onClick={toggleHome}>Sprawdź produkt</NavBtnLink>
           </NavBtn>
         </NavbarContainer>
       </Nav>

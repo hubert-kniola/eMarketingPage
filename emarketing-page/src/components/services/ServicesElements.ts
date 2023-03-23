@@ -42,10 +42,11 @@ export const ServicesColumn = styled.div`
   text-align: center;
 `;
 
-export const ServicesCard = styled.div`
+export const ServicesCard = styled.div<{ column?: boolean }>`
   background: #fff;
   display: flex;
-  flex-direction: flex-start;
+  flex-direction: ${({ column }) =>
+  column ? 'column' : 'flex-start'};
   align-items: center;
   border-radius: 10px;
   max-height: 340px;

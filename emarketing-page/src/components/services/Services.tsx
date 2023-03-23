@@ -11,28 +11,29 @@ import {
 
 interface ServicesProps {
   data: any;
+  column?: boolean;
 }
 
-const Services = ({ data }: ServicesProps) => {
+const Services = ({ data, column }: ServicesProps) => {
   return (
-    <ServicesContainer id="services">
+    <ServicesContainer id={data.id}>
       <ServicesH1>{data.maintitle}</ServicesH1>
       <ServicesWrapper multi={data.multi}>
-        <ServicesCard>
+        <ServicesCard column={column}>
           {data.icon1 && <ServicesIcon src={data.icon1} />}
           <ServicesColumn>
             <ServicesH2>{data.subtitle1}</ServicesH2>
             <ServicesP>{data.description1}</ServicesP>
           </ServicesColumn>
         </ServicesCard>
-        <ServicesCard>
+        <ServicesCard column={column}>
           {data.icon2 && <ServicesIcon src={data.icon2} />}
           <ServicesColumn>
             <ServicesH2>{data.subtitle2}</ServicesH2>
             <ServicesP>{data.description2}</ServicesP>
           </ServicesColumn>
         </ServicesCard>
-        <ServicesCard>
+        <ServicesCard column={column}>
           {data.icon3 && <ServicesIcon src={data.icon3} />}
           <ServicesColumn>
             <ServicesH2>{data.subtitle3}</ServicesH2>
@@ -40,7 +41,7 @@ const Services = ({ data }: ServicesProps) => {
           </ServicesColumn>
         </ServicesCard>
         {(data.icon4 || data.subtitle4) && (
-          <ServicesCard>
+          <ServicesCard column={column}>
             {data.icon4 && <ServicesIcon src={data.icon4} />}
             <ServicesColumn>
               <ServicesH2>{data.subtitle4}</ServicesH2>
@@ -49,7 +50,7 @@ const Services = ({ data }: ServicesProps) => {
           </ServicesCard>
         )}
         {(data.icon5 || data.subtitle5) && (
-          <ServicesCard>
+          <ServicesCard column={column}>
             {data.icon5 && <ServicesIcon src={data.icon5} />}
             <ServicesColumn>
               <ServicesH2>{data.subtitle5}</ServicesH2>
@@ -58,7 +59,7 @@ const Services = ({ data }: ServicesProps) => {
           </ServicesCard>
         )}
         {(data.icon6 || data.subtitle6) && (
-          <ServicesCard>
+          <ServicesCard column={column}>
             {data.icon6 && <ServicesIcon src={data.icon6} />}
             <ServicesColumn>
               <ServicesH2>{data.subtitle6}</ServicesH2>
@@ -67,7 +68,7 @@ const Services = ({ data }: ServicesProps) => {
           </ServicesCard>
         )}
         {(data.icon7 || data.subtitle7) && (
-          <ServicesCard>
+          <ServicesCard column={column}>
             {data.icon7 && <ServicesIcon src={data.icon7} />}
             <ServicesColumn>
               <ServicesH2>{data.subtitle7}</ServicesH2>
@@ -76,7 +77,7 @@ const Services = ({ data }: ServicesProps) => {
           </ServicesCard>
         )}
         {(data.icon8 || data.subtitle8) && (
-          <ServicesCard>
+          <ServicesCard column={column}>
             {data.icon8 && <ServicesIcon src={data.icon8} />}
             <ServicesColumn>
               <ServicesH2>{data.subtitle8}</ServicesH2>

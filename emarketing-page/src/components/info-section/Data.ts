@@ -20,6 +20,7 @@ import Team1 from "../../images/team.jpg";
 import Team2 from "../../images/team.png";
 import PM from "../../images/pm.jpg";
 import Menago from "../../images/menago.jpg";
+import PDF from "../../images/pdf.jpg";
 
 export const homeObjOne = {
   id: "product",
@@ -110,7 +111,7 @@ export const homeObjFive = {
   description2:
     "Ponad 95% pozytywnych opinii na forach i serwisach opiniotwórczych.",
   icon2: Notify,
-  subtitle3: "Współpracój!",
+  subtitle3: "Współpracuj!",
   description3:
     "Zostać naszym agentem w świecie sportu i reklamuj nasze produkty.",
   icon3: Award2,
@@ -118,7 +119,7 @@ export const homeObjFive = {
 };
 
 export const homeObjSix = {
-  id: "",
+  id: "together",
   maintitle: "Współpracowaliśmy z:",
   icon1: KFD,
   icon2: SFD,
@@ -160,7 +161,8 @@ export const homeObjEight = {
   topLine: "Janusz Kowalski",
   headline: "CIO and CFO",
   description: '"Panie areczku! Witam w naszej firmie! Dla Pana wszystko."',
-  buttonLabel: "Sprawdź",
+  buttonLabel: "Poznaj resztę zespołu",
+  to: "/company",
   imgStart: true,
   img: Areczek,
   alt: "Services",
@@ -168,6 +170,7 @@ export const homeObjEight = {
   primary: true,
   darkText: true,
   withButton: false,
+  withNavButton: true,
 };
 
 export const compObjOne = {
@@ -266,11 +269,11 @@ export const compObjFour = {
   description5:
     "Nasza platforma oferuje bezpłatną wersję próbną, która pozwala wygenerować dietę na jeden dzień. Pełna wersja platformy wymaga opłaty.",
   subtitle6:
-    "Jak często powinienem stosować dietę wygenerowaną przez Waszą platformę?",
+    "Jak często stosować dietę wygenerowaną przez Waszą platformę?",
   description6:
     "Częstotliwość stosowania diety zależy od celów i potrzeb klienta. Zalecamy skonsultowanie się z lekarzem lub dietetykiem przed rozpoczęciem stosowania diety.",
   subtitle7:
-    "Czy dieta generowana przez Waszą firmę uwzględnia preferencje żywieniowe, takie jak wegetarianizm lub bezglutenowość?",
+    "Czy dieta generowana przez Waszą firmę uwzględnia preferencje żywieniowe np. wegetarianizm?",
   description7:
     "Tak, nasza platforma generująca dietę uwzględnia preferencje żywieniowe klienta, w tym wegetarianizm, weganizm, bezglutenowość.",
   subtitle8: "Czy można dokonać modyfikacji wygenerowanej diety?",
@@ -303,14 +306,18 @@ export const compObjFive = {
 
 export const compObjSix = {
   id: "",
-  maintitle: "Współpracowaliśmy z:",
-  icon1: KFD,
-  icon2: SFD,
-  icon3: GymGlamour,
-  icon4: GymShark,
-  icon5: Dzik,
-  icon6: GymBeam,
-  icon7: Fitatu,
-  icon8: Viking,
-  multi: true,
+  maintitle: "Dokumenty",
+  icon1: PDF,
+  subtitle1: "Inwestycje i udziały",
+  description1:
+    "",
+  icon2: PDF,
+  subtitle2: "Warunki świadczenia usług",
+  description2:
+    "",
+  icon3: PDF,
+  subtitle3: "Warunki odpowiedzialności prawnej",
+  description3:
+    "",
+  multi: false,
 };
