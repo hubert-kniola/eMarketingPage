@@ -21,6 +21,7 @@ import Team2 from "../../images/team.png";
 import PM from "../../images/pm.jpg";
 import Menago from "../../images/menago.jpg";
 import PDF from "../../images/pdf.jpg";
+import CFO from "../../images/cfo.jpg";
 
 export const homeObjOne = {
   id: "product",
@@ -140,7 +141,7 @@ export const homeObjSeven = {
   topLine: "Hubert Knioła",
   headline: "CEO and OWNER",
   description:
-    '"Człowiek XXI wieku, elokwętny, o niestandardowym IQ, wyróżniający się gracją i nienaganną dykcją, a przede wszystkim skromny szef dobrze funkcjonującej firmy! To właśnie ja."',
+    '"Dobra firma to taka, która nie tylko osiąga sukces, ale też tworzy pozytywną atmosferę dla swoich pracowników."',
   buttonLabel: "Poznaj resztę zespołu",
   to: "/company",
   imgStart: false,
@@ -158,13 +159,13 @@ export const homeObjEight = {
   lightBg: true,
   lightText: false,
   lightTextDesc: true,
-  topLine: "Janusz Kowalski",
+  topLine: "Klaudia Perska",
   headline: "CIO and CFO",
-  description: '"Panie areczku! Witam w naszej firmie! Dla Pana wszystko."',
+  description: '"Potrafimy zaspokoić potrzeby swoich klientów, zadowolić swoich pracowników i jednocześnie przynieść korzyści swoim udziałowcom."',
   buttonLabel: "Poznaj resztę zespołu",
   to: "/company",
   imgStart: true,
-  img: Areczek,
+  img: CFO,
   alt: "Services",
   dark: true,
   primary: true,

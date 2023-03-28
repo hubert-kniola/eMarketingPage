@@ -12,7 +12,6 @@ const Company = () => {
       <InfoSection data={compObjSeven} />
       <InfoSection data={compObjTwo} />
       <InfoSection data={compObjThree} />
-      <Services data={compObjFour} />
       <ContactSection data={compObjFive} />
       <Services data={compObjSix} column={true} />
       <Footer />

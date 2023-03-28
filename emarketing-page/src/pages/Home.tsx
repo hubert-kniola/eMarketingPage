@@ -1,7 +1,7 @@
 import Footer from "../components/footer/Footer";
 import HeroSection from "../components/hero-section/HeroSection";
 import ContactSection from "../components/info-section/ContactSection";
-import { homeObjEight, homeObjFive, homeObjFour, homeObjOne, homeObjSeven, homeObjSix, homeObjThree, homeObjTwo } from "../components/info-section/Data";
+import { compObjFour, homeObjEight, homeObjFive, homeObjFour, homeObjOne, homeObjSeven, homeObjSix, homeObjThree, homeObjTwo } from "../components/info-section/Data";
 import InfoSection from "../components/info-section/InfoSection";
 import Services from "../components/services/Services";
 
@@ -16,6 +16,7 @@ const Home = () => {
       <Services data={homeObjSix}/>
       <InfoSection data={homeObjSeven} />
       <InfoSection data={homeObjEight} />
+      <Services data={compObjFour} />
       <ContactSection data={homeObjFour}/>
       <Footer/>
     </>
