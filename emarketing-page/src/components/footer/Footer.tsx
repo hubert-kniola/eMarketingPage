@@ -21,7 +21,7 @@ import {
   SocialMediaWrap,
   WebsiteRights,
 } from "./FooterElements";
-import { animateScroll as scroll, Link } from "react-scroll";
+import { animateScroll as scroll } from "react-scroll";
 
 const Footer = () => {
   const toggleHome = () => {

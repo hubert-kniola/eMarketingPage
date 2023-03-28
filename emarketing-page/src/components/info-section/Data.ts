@@ -14,7 +14,6 @@ import GymBeam from "../../images/beam.png";
 import Fitatu from "../../images/fitatu.png";
 import Viking from "../../images/viking.png";
 import Owner from "../../images/owner.png";
-import Areczek from "../../images/areczek.jpg";
 import Map from "../../images/map.jpg";
 import Team1 from "../../images/team.jpg";
 import Team2 from "../../images/team.png";
