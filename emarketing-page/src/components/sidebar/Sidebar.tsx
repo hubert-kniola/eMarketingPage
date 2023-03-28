@@ -23,12 +23,13 @@ const Sidebar = ({ isOpen, toggle }: SidebarProps) => {
       </Icon>
       <SidebarWrapper>
         <SidebarMenu>
-          <SidebarLink to="about" onClick={toggle}>About</SidebarLink>
-          <SidebarLink to="discover" onClick={toggle}>Discover</SidebarLink>
-          <SidebarLink to="services" onClick={toggle}>Services</SidebarLink>
+          <SidebarLink to="product" onClick={toggle}>Produkt</SidebarLink>
+          <SidebarLink to="services" onClick={toggle}>Usługi</SidebarLink>
+          <SidebarLink to="about" onClick={toggle}>O produkcie</SidebarLink>
+          <SidebarLink to="contact" onClick={toggle}>Kontakt</SidebarLink>
         </SidebarMenu>
         <SideBtnWrap>
-          <SidebarRoute to="/discover" onClick={toggle}>Product test</SidebarRoute>
+          <SidebarRoute to="/company" onClick={toggle}>Sprawdź produkt</SidebarRoute>
         </SideBtnWrap>
       </SidebarWrapper>
     </SidebarContainer>

@@ -10,7 +10,8 @@ import {
   NavLinks,
   NavBtn,
   NavBtnLink,
-  ArrowLeft
+  ArrowLeft,
+  NavLinksNav,
 } from "./NavbarElements";
 import { animateScroll as scroll } from "react-scroll";
 import { useLocation } from "react-router";
@@ -30,7 +31,14 @@ const Navbar = ({ toggle }: NavbarProps) => {
       <Nav>
         <NavbarContainer>
           <NavLogo to="/" onClick={toggleHome}>
-            {location.pathname === "/company" ? <><ArrowLeft />WRÓĆ</> : "DIET-GENZ"}
+            {location.pathname === "/company" ? (
+              <>
+                <ArrowLeft />
+                WRÓĆ
+              </>
+            ) : (
+              "DIET-GENZ"
+            )}
           </NavLogo>
           <MobileIcon onClick={toggle}>
             <FaBars />
@@ -46,18 +54,6 @@ const Navbar = ({ toggle }: NavbarProps) => {
                 activeClass="active"
               >
                 {location.pathname === "/company" ? "      " : "Produkt"}
-              </NavLinks>
-            </NavItem>
-            <NavItem>
-              <NavLinks
-                to="services"
-                smooth={true}
-                duration={500}
-                spy={true}
-                offset={-80}
-                activeClass="active"
-              >
-                {location.pathname === "/company" ? "      " : "Usługi"}
               </NavLinks>
             </NavItem>
             <NavItem>
@@ -84,9 +80,16 @@ const Navbar = ({ toggle }: NavbarProps) => {
                 {location.pathname === "/company" ? "      " : "Kontakt"}
               </NavLinks>
             </NavItem>
+            <NavItem>
+              <NavLinksNav to="/company" onClick={toggleHome}>
+                {location.pathname === "/company" ? "      " : "O firmie"}
+              </NavLinksNav>
+            </NavItem>
           </NavMenu>
           <NavBtn>
-            <NavBtnLink to="/" onClick={toggleHome}>Sprawdź produkt</NavBtnLink>
+            <NavBtnLink to="/" onClick={toggleHome}>
+              Sprawdź produkt
+            </NavBtnLink>
           </NavBtn>
         </NavbarContainer>
       </Nav>
