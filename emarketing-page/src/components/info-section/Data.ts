@@ -181,7 +181,7 @@ export const compObjOne = {
   topLine: "Marcin Fokusińki",
   headline: "Brand Manager",
   description:
-    '"Nie zawsze wszystko idzie po naszej. Trzeba pracować by nie stanowiło to przeszkód w naszej drodze ku celowi"',
+    '"Nie zawsze wszystko idzie po naszej myśli. Trzeba pracować by nie stanowiło to przeszkód w naszej drodze ku celowi"',
   buttonLabel: "Sprawdź",
   imgStart: true,
   img: PM,

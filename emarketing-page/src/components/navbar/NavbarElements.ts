@@ -1,6 +1,14 @@
 import styled from "styled-components";
 import { Link as LinkR } from "react-router-dom";
 import { Link as LinkS } from "react-scroll";
+import { MdKeyboardArrowLeft } from "react-icons/md";
+
+
+export const ArrowLeft = styled(MdKeyboardArrowLeft)`
+  margin-left:2px;
+  font-size: 28px;
+`;
+
 
 export const Nav = styled.nav`
   background: #000;

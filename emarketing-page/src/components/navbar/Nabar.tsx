@@ -10,6 +10,7 @@ import {
   NavLinks,
   NavBtn,
   NavBtnLink,
+  ArrowLeft
 } from "./NavbarElements";
 import { animateScroll as scroll } from "react-scroll";
 import { useLocation } from "react-router";
@@ -29,7 +30,7 @@ const Navbar = ({ toggle }: NavbarProps) => {
       <Nav>
         <NavbarContainer>
           <NavLogo to="/" onClick={toggleHome}>
-            DIET-GENZ
+            {location.pathname === "/company" ? <><ArrowLeft />WRÓĆ</> : "DIET-GENZ"}
           </NavLogo>
           <MobileIcon onClick={toggle}>
             <FaBars />
